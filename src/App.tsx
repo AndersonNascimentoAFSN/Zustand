@@ -10,7 +10,7 @@ export function App() {
   }
 
   return (
-    <div>
+    <div style={{maxWidth: '600px', margin: '0 auto'}}>
       {data?.map((repo) => (
         <Card repo={repo} key={repo.id} onAddToFavorite={handleAddToFavorite}/>
       ))}
